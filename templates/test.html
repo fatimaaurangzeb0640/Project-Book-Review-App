@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    test
+{% endblock %}
+
+{% block body %}
+ 
+{% for rate in rates %}
+            <li>
+                {{ rate[0] }}
+            </li>
+        {% endfor %}
+
+{% endblock %}

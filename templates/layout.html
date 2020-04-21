@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
+    <style>
+        body
+        {
+            background-color: #e6b800;
+        }
+        .account{
+            text-align: center;
+            width: 20%;
+            padding: 5px;
+            margin-left: 90%;
+            background-color: #0099cc;
+            color: white;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        p{
+            color: black;
+        }
+        .loginandsignup
+        {
+            width:70%;
+            float: left;
+        }
+        img{
+            padding-top: 10px;
+            padding-left: 40px;
+        }
+        .goodreads, .review
+        {
+           background-color:#0099cc ;
+           border-radius: 5px;
+           padding: 5px;
+           margin-bottom: 10px;
+        }
+    </style>
+    </head>
+    <body>
+
+        <title>{% block title %}{% endblock %}</title>
+        <div class="container">
+
+            {% block body %}
+            
+            {% endblock %}
+        </div>
+    </body>
+</html>

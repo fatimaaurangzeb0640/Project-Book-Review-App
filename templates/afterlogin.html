@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Success!
+{% endblock %}
+
+{% block body %}
+<form action="{{ url_for('logout') }}" method="get">
+  <div class="account">
+    <h6>{{ session["user_name"] }}'s Account</h6>
+    <button class="btn btn-dark">Logout</button>
+  </div>
+</form>
+
+    <h1>Login successful!</h1>
+
+    <p>Hello {{ name }}, welcome to your account.</p>
+
+    <form action="{{ url_for('search') }}" method="post">
+    <h2>Search a book here!</h2>
+    
+    <div class="form-group">
+        <input class="form-control" type="text" name="book" placeholder="Search a book by name, author, isbn number or publication year">
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-dark">Search</button>
+    </div>
+    </form>
+
+
+{% endblock %}
