@@ -1,4 +1,4 @@
-# Project 1
+# Book Review Application using Flask
 
 Web Programming with Python and JavaScript
 
